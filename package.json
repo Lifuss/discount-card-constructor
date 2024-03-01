@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "author": "Arsen Hryhoriak",
+  "homepage": "https://lifuss.github.io/discount-card-constructor/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
