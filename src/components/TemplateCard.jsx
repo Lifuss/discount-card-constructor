@@ -9,7 +9,7 @@ const Template = ({ name, price, discount }) => {
       </p>
       <div className="outer-box">
         <div className="inner-box">
-          <p>Кожної Неділі</p>
+          <p>Кожної неділі</p>
           <span>-{discount}%</span>
         </div>
         <span>{parseInt(price - (price * discount) / 100)} грн.</span>

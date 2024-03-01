@@ -7,7 +7,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: black;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 20px;
 }
 .form {
   width: 465px;
@@ -19,8 +19,8 @@ body {
 }
 
 .box {
-  width: 465px;
-  height: 165px;
+  width: 80mm;
+  height: auto;
   background-color: white;
   margin-bottom: 5px;
 }
@@ -28,21 +28,21 @@ body {
   color: black;
   text-align: center;
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 20px;
 }
 .box p {
   text-align: right;
   padding-right: 6px;
-  width: 255px;
   margin-left: auto;
   display: flex;
   justify-content: space-between;
 }
 .price {
-  font-size: 34px;
+  font-size: 20px;
+  width: 60%;
 }
 .sum {
-  font-size: 34px;
+  font-size: 20px;
   font-weight: bold;
 }
 .outer-box {
@@ -53,19 +53,20 @@ body {
   align-items: baseline;
 }
 .outer-box > span {
-  font-size: 34px;
+  font-size: 20px;
   font-weight: 700;
 }
 .inner-box {
-  width: 282px;
-  height: 57px;
+  width: 55%;
+  height: 10mm;
   background-color: black;
   position: relative;
   color: white;
-  font-size: 24px;
-  padding: 5px;
+  font-size: 16px;
+
+  /* padding: 5px; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 10px;
   margin-left: 10px;
@@ -73,20 +74,22 @@ body {
 }
 .inner-box p {
   display: inline-block;
+  text-wrap: nowrap;
+  text-align: left;
 }
 .inner-box span {
-  font-size: 34px;
+  font-size: 20px;
 }
 .inner-box::after {
   content: "";
   display: block;
   width: 0;
   height: 0;
-  border-top: 28px solid transparent;
-  border-bottom: 29px solid transparent;
-  border-left: 25px solid black;
+  border-top: 20px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 20px solid black;
   position: absolute;
-  right: -24px;
+  right: -20px;
   top: 0px;
 }
 .A4 {
