@@ -23,6 +23,7 @@ body {
   height: auto;
   background-color: white;
   margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 .box h2 {
   color: black;
