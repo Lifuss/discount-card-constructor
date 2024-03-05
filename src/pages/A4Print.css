@@ -1,0 +1,124 @@
+textarea {
+  min-height: 50px;
+}
+.title {
+  font-size: 50px;
+  text-align: center;
+  min-height: 58px;
+
+  margin: 0 auto;
+}
+.description {
+  margin-top: -50px;
+  font-size: 28px;
+
+  color: #000000;
+}
+.A4form {
+  margin-bottom: 40px;
+}
+button {
+  height: 30px;
+}
+.A4form + .A4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 65px;
+  padding-right: 75px;
+  padding-bottom: 25px;
+}
+
+.description-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.description-list li {
+  position: relative;
+  padding-left: 0.5em;
+  font-size: 32px;
+}
+
+.description-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+.price-box {
+  height: 469px;
+  width: 100%;
+}
+.a4price {
+  font-size: 200px;
+  text-align: right;
+  width: 100%;
+  position: relative;
+}
+.a4price::after {
+  content: "грн";
+  font-size: 32px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.discount-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.house-figure {
+  width: 210px;
+  height: 225px;
+  background-color: black;
+  position: relative;
+  color: white;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  -webkit-print-color-adjust: exact;
+}
+.house-figure p {
+  width: 225px;
+  font-size: 32px;
+  display: inline-block;
+  margin-left: 40px;
+  text-align: center;
+  z-index: 3;
+}
+.house-figure span {
+  font-size: 64px;
+  margin-left: 40px;
+}
+.house-figure::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 115px solid transparent;
+  border-bottom: 112px solid transparent;
+  border-left: 86px solid black;
+  position: absolute;
+  right: -85px;
+  top: 0px;
+}
+
+.discount-price {
+  font-size: 138px;
+  position: relative;
+}
+
+.discount-price::after {
+  content: "грн";
+  font-size: 32px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

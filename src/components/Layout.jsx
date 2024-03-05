@@ -1,19 +1,25 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import "./Layout.css";
 
 const Layout = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to={"/card"}>Карточки</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/a4"}>Принт А4</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <>
+      <header className="header">
+        <nav>
+          <ul>
+            <li>
+              <NavLink to={"/"}>Карточки</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/a4"}>Фулл А4</NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <Outlet />
+      </main>
+    </>
   );
 };
 
