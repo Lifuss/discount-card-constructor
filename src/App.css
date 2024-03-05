@@ -65,7 +65,6 @@ body {
   color: white;
   font-size: 16px;
 
-  /* padding: 5px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,8 +118,14 @@ body {
 .list li:nth-child(odd):last-child {
   border-right: none;
 }
+a.active {
+  color: white !important;
+}
 
 @media print {
+  .header {
+    display: none;
+  }
   .form {
     display: none;
   }
