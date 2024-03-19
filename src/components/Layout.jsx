@@ -11,7 +11,10 @@ const Layout = () => {
               <NavLink to={"/"}>Карточки</NavLink>
             </li>
             <li>
-              <NavLink to={"/a4"}>Фулл А4</NavLink>
+              <NavLink to={"/small"}>Малі картки</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/a4"}>Цінник А4</NavLink>
             </li>
           </ul>
         </nav>
