@@ -1,5 +1,8 @@
+import Barcode from "react-barcode";
+
 // eslint-disable-next-line react/prop-types
-const Template = ({ name, price, discount }) => {
+const Template = ({ name, price, discount, barcode }) => {
+  console.log(name);
   return (
     <li className="box small-box">
       <h2>{name}</h2>
@@ -13,6 +16,15 @@ const Template = ({ name, price, discount }) => {
           <span>-{discount}%</span>
         </div>
         <span>{parseInt(price - (price * discount) / 100)} грн.</span>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Barcode
+          value={barcode}
+          fontSize={12}
+          height={25}
+          width={2}
+          margin={5}
+        />
       </div>
     </li>
   );

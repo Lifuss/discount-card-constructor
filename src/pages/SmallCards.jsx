@@ -6,22 +6,26 @@ const SmallCards = () => {
 
   const addTemplate = (event) => {
     event.preventDefault();
-    const [name, price, discount] = event.target.elements;
+    const [name, price, discount, barcode] = event.target.elements;
+    console.log(event.target.elements);
     setTemplates((prev) => [
       ...prev,
       {
         name: name.value,
         price: price.value,
         discount: discount.value,
+        barcode: barcode.value,
       },
     ]);
   };
   return (
     <>
       <form onSubmit={addTemplate} className="form">
-        <input type="text" placeholder="Найменування" />
-        <input type="number" placeholder="Ціна" />
-        <input type="number" placeholder="Скидка" />
+        <input type="text" name="name" placeholder="Найменування" />
+        <input type="number" name="price" placeholder="Ціна" />
+        <input type="number" name="discount" placeholder="Скидка" />
+        <input type="text" name="barcode" placeholder="Штрихкод" />
+
         <button type="submit">Add</button>
       </form>
 
@@ -33,6 +37,7 @@ const SmallCards = () => {
               name={template.name}
               price={template.price}
               discount={template.discount}
+              barcode={template.barcode}
             />
           ))}
         </ul>
