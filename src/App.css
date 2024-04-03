@@ -49,6 +49,8 @@ body {
 }
 .small-box p {
   padding-right: 4px;
+  display: block;
+  margin-left: auto;
 }
 .price {
   font-size: 20px;
@@ -57,6 +59,7 @@ body {
 .small-price {
   font-size: 16px;
   width: 40%;
+  margin-right: 20px;
 }
 .sum {
   font-size: 20px;
